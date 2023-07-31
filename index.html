@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Body Mass Index Calculator </title>
+</head>
+<body>
+        <div class="container">
+          <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+          <form>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+      
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+      
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+      
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+      
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+          </form>
+      
+          <div id="result"></div>
+        </div>
+        
+        
+        <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
